@@ -2,7 +2,7 @@
  
 ## Overview
  
-This repository contains data analysis projects completed during my Data Analytics Internship at DecodeLabs. The projects span the full analytics workflow — from data cleaning and preparation through exploratory data analysis, SQL querying, and interactive Power BI dashboard development — using real-world datasets to generate meaningful business insights.
+This repository contains data analysis projects completed during my Data Analytics Internship at DecodeLabs. The projects span the full analytics workflow, from data cleaning and preparation through exploratory data analysis, SQL querying, and interactive Power BI dashboard development; using real-world datasets to generate meaningful business insights.
  
 ---
  
@@ -10,14 +10,14 @@ This repository contains data analysis projects completed during my Data Analyti
  
 ### Project Description
  
-The goal of this project was to clean and prepare a raw admissions dataset (DePaul University) for analysis using Microsoft Excel and Power Query. Multiple data quality issues were identified and resolved to produce a clean, structured dataset ready for reporting.
+The goal of this project was to clean and prepare a raw business dataset for analysis using Microsoft Excel and Power Query. The dataset contained multiple data quality issues including blank cells, duplicate records, and incorrect data types, all of which were identified and resolved to produce a clean, structured dataset ready for reporting.
  
 ### Objectives
  
 - Improve overall data quality
 - Remove duplicate records
-- Handle missing and null values
-- Standardize data formats and correct data types
+- Handle missing and blank values
+- Correct data types across all columns
 - Prepare the dataset for downstream analysis
 ### Tools Used
  
@@ -25,20 +25,36 @@ The goal of this project was to clean and prepare a raw admissions dataset (DePa
 - Power Query
 ### Dataset Information
  
-The dataset is a DePaul University admissions dataset containing student application records with fields including student demographics, contact information, college/department details, and application timestamps.
+The dataset contained **14 column headers**, **1,201 rows**, and **309 blank cells** across the following fields:
+ 
+| Column | Data Type |
+|---|---|
+| Order_ID | Text |
+| Date | Date |
+| Customer_ID | Text |
+| Product | Text |
+| Quantity | Whole Number |
+| Unit_Price | Currency |
+| Shipping_Address | Text |
+| Payment_Method | Text |
+| Order_Status | Text |
+| Tracking_Number | Text |
+| Items_In_Cart | Whole Number |
+| Coupon_Code | Text |
+| Referral_Source | Text |
+| Total_Price | Currency |
  
 ### Data Cleaning Process
  
 The following cleaning operations were performed in Power Query:
  
-1. Removed duplicate rows
-2. Converted Unix timestamps to readable date format
-3. Standardized and formatted date columns
-4. Merged address fields into a single structured column
-5. Split the College column into separate College and Department columns
-6. Fixed phone numbers stored in scientific notation
-7. Replaced structural nulls where data was not applicable
-8. Renamed columns for consistency and readability
+1. **Converted the dataset into a Table** — Selected the full range (`Ctrl + A`) and transformed it into an Excel Table (`Ctrl + T`)
+2. **Exported to Power Query** — Loaded the table via Data Tab → From Table/Range
+3. **Removed errors and corrected data types** — Applied the appropriate data type to each of the 14 columns
+4. **Handled blank cells** — The `Coupon_Code` column contained 309 blank cells; all blanks were replaced with `"No Coupon Code"`
+5. **Removed duplicates** — Duplicate records were removed from the `Order_ID` column
+6. **Exported cleaned data back to Excel** — Via Home Tab → Close and Load
+7. **Renamed the output table** — The transformed table was renamed to `Cleaned Data`
 ---
  
 ### Messy Dataset
