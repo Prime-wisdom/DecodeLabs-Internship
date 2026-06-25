@@ -45,7 +45,7 @@ The following cleaning operations were performed in Power Query:
  
 > Initial raw dataset before cleaning and transformation.
  
-*(Project 1 Images: Messy Data.png)*
+![Messy Data](Project1_Images/Messy_Data.png)
  
 ---
  
