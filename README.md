@@ -64,7 +64,7 @@ The following cleaning operations were performed in Power Query:
  
 > Power Query was used to clean, transform, and standardize the dataset through a series of applied steps.
  
-*(Screenshot: power_query_steps.png)*
+![Power_Query_Steps](Project1_Images/Power_Query_Steps.png)
  
 ---
  
@@ -72,7 +72,7 @@ The following cleaning operations were performed in Power Query:
  
 > Dataset after cleaning and preparation using Power Query.
  
-*(Screenshot: cleaned_data.png)*
+![Cleaned Data](Project1_Images/Cleaned_Data.png)
  
 ---
  
