@@ -94,13 +94,12 @@ The following cleaning operations were performed in Power Query:
  
 ### Challenges Faced
  
-- Unix timestamps not automatically recognized as dates
-- Phone numbers stored in scientific notation requiring text conversion
-- Structural nulls that needed to be handled differently from data entry nulls
-- Inconsistent college/department naming requiring column splitting and standardization
+- 309 blank cells in the `Coupon_Code` column required bulk replacement
+- Incorrect data types across multiple columns needed individual correction
+- Duplicate `Order_ID` records had to be identified and removed before analysis
 ### Outcome
  
-The raw admissions dataset was successfully transformed into a clean, organized, and analysis-ready table. All identified quality issues were resolved, resulting in a dataset suitable for reporting and further analysis.
+The raw dataset was successfully transformed into a clean, organized, and analysis-ready table. All 309 blank cells were handled, duplicates were removed, and data types were correctly applied across all 14 columns — resulting in a reliable dataset suitable for reporting and further analysis.
  
 ---
  
