@@ -132,15 +132,14 @@ A 1,200-row e-commerce orders dataset containing transaction records with fields
  
 > Summary statistics used to understand the dataset distribution.
  
-*(Screenshot: basic_descriptive_statistics.png)*
+![Descriptive_Statistics](Project2_Images/Descriptive_Statistics.png)
  
 ---
  
 ### Pivot Table Analysis
  
 > Pivot tables used to summarize and analyze trends across categories, payment methods, and referral sources.
- 
-*(Screenshot: pivot_tables.png)*
+ ![Key_Observation_Summary](Project2_Images/Key_Observation_Summary(PT).png)
  
 ---
  
@@ -148,7 +147,7 @@ A 1,200-row e-commerce orders dataset containing transaction records with fields
  
 > IQR calculations used to identify data distribution and flag outliers.
  
-*(Screenshot: iqr_outlier_analysis.png)*
+ ![Quartile_Analysis(Outliers)](Project2_Images/Quartile_Analysis(Outliers).png)
  
 ---
  
@@ -194,13 +193,17 @@ The dataset was imported into SQL Server from a CSV file. Data cleaning and tran
  
 ### Query Images
  
-*(Screenshot: year_month_extraction.png)*
+![SQL_Images](Project3_Images/SQL_Data_Analysis_1.png)
 
 
-*(Screenshot: year_month_extraction.png)*
+![SQL_Images](Project3_Images/SQL_Data_Analysis_2.png)
 
 
-*(Screenshot: year_month_extraction.png)*
+![SQL_Images](Project3_Images/SQL_Data_Analysis_3.png)
+
+
+
+![SQL_Images](Project3_Images/SQL_Data_Analysis_4.png)
  
 ---
  
